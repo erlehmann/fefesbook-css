@@ -1,8 +1,22 @@
+html::before {
+    content: "";
+    background-color: #3b5998;
+    display: block;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 /* Default Facebook CSS */
 body {
-    font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
-    font-size: 11px;
     color: #333333;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+    margin: 0 auto;
+    max-width: 920px;
+    position: relative;
 }
 
 /* Default Anchor Style */
@@ -22,6 +36,7 @@ body > h2 {
     color: #ffffff;
     background-color: #3b5998;
     padding: 20px;
+    margin-bottom: 0px;
 }
 
 body > h2 > a {
@@ -32,6 +47,129 @@ body > h2 > a {
     width: 190px;
 }
 
+body > h2::after {
+    content: "Fefesbook ermöglicht es dir, mit den Menschen in deinem Zeitbinderbotnetz in Verbindung zu treten und Inhalte mit diesen zu trollen.";
+    display: block;
+    margin: -20px;
+    position: relative;
+    top: 40px;
+    left: 0px;
+}
+
+body > h2 + b {
+    display: block;
+    margin: 50px auto 10px;
+    text-align: center;
+}
+
+body > p[align=right] {
+    color: transparent;
+    font-size: 0px;
+    position: absolute;
+    left: 215px;
+    top: 35px;
+}
+
+body > p[align=right] a {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px;
+}
+
+body > h2 + b,
+body > h3,
+body > ul {
+    max-width: 520px;
+}
+body > h3,
+body > ul {
+    margin: 0 auto;
+    
+}
+
+body > h3 {
+    border-bottom: 1px solid #999999;
+    color: #999999;
+    font-size: 11px;
+}
+
+body > h3:nth-of-type(1),
+body > h3:nth-of-type(2) {
+    color: transparent;
+    font-size: 0px;
+}
+
+body > h3:nth-of-type(1)::before,
+body > h3:nth-of-type(2)::before {
+    color: #999999;
+    font-size: 11px;
+    display: inline-block;
+}
+
+body > h3:nth-of-type(1)::before {
+    content: "Heute";
+}
+
+body > h3:nth-of-type(2)::before {
+    content: "Gestern";
+}
+
+body > ul {
+    padding: 0px 40px;
+}
+
+body > ul > li {
+    margin: 10px 40px;
+    list-style-type: none;
+    list-style-image: url("icons/user_gray.png");
+}
+
+body > ul:nth-of-type(1) > li:nth-of-type(2n-1),
+body > ul:nth-of-type(2) > li:nth-of-type(2n-2),
+body > ul:nth-of-type(3) > li:nth-of-type(2n-3),
+body > ul:nth-of-type(4) > li:nth-of-type(2n-4),
+body > ul:nth-of-type(5) > li:nth-of-type(2n-5) {
+    list-style-image: url("icons/comment.png");
+}
+
+body > ul:nth-of-type(1) > li:nth-of-type(3n-1),
+body > ul:nth-of-type(2) > li:nth-of-type(3n-2),
+body > ul:nth-of-type(3) > li:nth-of-type(3n-3),
+body > ul:nth-of-type(4) > li:nth-of-type(3n-4),
+body > ul:nth-of-type(5) > li:nth-of-type(3n-5) {
+    list-style-image: url("icons/page_link.png");
+}
+
+body > ul:nth-of-type(1) > li:nth-of-type(5n-1),
+body > ul:nth-of-type(2) > li:nth-of-type(5n-2),
+body > ul:nth-of-type(3) > li:nth-of-type(5n-3),
+body > ul:nth-of-type(4) > li:nth-of-type(5n-4),
+body > ul:nth-of-type(5) > li:nth-of-type(5n-5) {
+    list-style-image: url("icons/pictures.png");
+}
+
+body > ul > li > a:first-child {
+    color: transparent;
+    font-size: 0px;
+}
+
+body > ul > li > a:first-child::before {
+    color: #3b5998;
+    content: "Felix von Leitner";
+    font-size: 11px;
+    font-weight: bold;
+}
+
+body > ul > li > a:first-child:hover::before {
+    text-decoration: underline;
+}
+
+body > ul > li > a:first-child::after {
+    color: #333333;
+    font-size: 11px;
+    content: " schrieb:";
+}
 
 /* Facebook Box Styles */
 .fbgreybox
@@ -43,12 +181,14 @@ body > h2 > a {
     font-size: 13px;
     font-weight: bold;
 }
+
+body > h2::after,
 .fbbluebox
 {
     background-color: #eceff6;
     border: 1px solid #d4dae8;
     color: #333333;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 13px;
     font-weight: bold;
 }
