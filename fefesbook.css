@@ -30,6 +30,14 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    margin: 10px 0;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
 body > h2 {
     color: #ffffff;
     background-color: #3b5998;
