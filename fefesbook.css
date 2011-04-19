@@ -117,9 +117,16 @@ body > ul {
 }
 
 body > ul > li {
-    margin: 10px 40px;
+    border-bottom: 1px solid #d8dfea;
     list-style-type: none;
     list-style-image: url("icons/user_gray.png");
+    margin: 10px 40px 0px 40px;
+    padding-bottom: 10px;
+}
+
+body > ul > li:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0px;
 }
 
 body > ul:nth-of-type(1) > li:nth-of-type(2n-1),
