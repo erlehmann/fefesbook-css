@@ -181,18 +181,8 @@ div:last-of-type {
 }
 
 div:last-of-type::after {
-    content: " · Silk icon set 1.3 – CC-BY Mark James";
-}
-
-/* Facebook Box Styles */
-.fbgreybox
-{
-    background-color: #f7f7f7;
-    border: 1px solid #cccccc;
-    color: #333333;
-    padding: 10px;
-    font-size: 13px;
-    font-weight: bold;
+    content: " · CSS – erlehmann · Silk icon set 1.3 – CC-BY Mark James";
+    white-space: pre;
 }
 
 body > h2::after
