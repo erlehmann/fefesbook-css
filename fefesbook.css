@@ -71,6 +71,7 @@ body > h2 + b {
 body > p[align=right] {
     color: transparent;
     font-size: 0px;
+    margin: 0;
     position: absolute;
     left: 215px;
     top: 35px;
