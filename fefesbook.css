@@ -90,7 +90,7 @@ body > ul {
 }
 body > h3,
 body > ul {
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 body > h3 {
