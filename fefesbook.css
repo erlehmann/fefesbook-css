@@ -8,7 +8,6 @@ html::before {
     width: 100%;
 }
 
-/* Default Facebook CSS */
 body {
     color: #333333;
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
@@ -19,7 +18,6 @@ body {
     position: relative;
 }
 
-/* Default Anchor Style */
 a {
     color: #3b5998;
     outline-style: none;
@@ -190,8 +188,7 @@ div:last-of-type::after {
     font-weight: bold;
 }
 
-body > h2::after,
-.fbbluebox
+body > h2::after
 {
     background-color: #eceff6;
     border: 1px solid #d4dae8;
@@ -201,8 +198,7 @@ body > h2::after,
     font-weight: bold;
 }
 
-body > h2 + b,
-.fbinfobox
+body > h2 + b
 {
     background-color: #fff9d7;
     border: 1px solid #e2c822;
@@ -210,40 +206,4 @@ body > h2 + b,
     padding: 10px;
     font-size: 13px;
     font-weight: bold;
-}
-
-.fberrorbox
-{
-    background-color: #ffebe8;
-    border: 1px solid #dd3c10;
-    color: #333333;
-    padding: 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-/* Content Divider on White Background */
-.fbcontentdivider
-{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 520px;
-    height: 1px;
-    background-color: #d8dfea;
-}
-/* Facebook Tab Style */
-.fbtab
-{
-    padding: 8px;
-    background-color: #d8dfea;
-    color: #3b5998;
-    font-weight: bold;
-    float: left;
-    margin-right: 4px;
-    text-decoration: none;
-}
-.fbtab:hover
-{
-    background-color: #3b5998;
-    color: #ffffff;
-    cursor: hand;
 }
