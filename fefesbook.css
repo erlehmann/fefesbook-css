@@ -1,8 +1,15 @@
 html::before {
+    border: 38px solid #3b5998;
+    /*
+     * The following styles do not work in Chromium 13.0.782.107 (Developer Build 94237 Linux).
+     * Since it did work in an earlier version of Chromium, this is most probably a regression.
+     *
+     * background-color: #3b5998;
+     * height: 76px;
+    */
     content: "";
-    background-color: #3b5998;
     display: block;
-    height: 76px;
+    height: 0;
     position: absolute;
     top: 0;
     width: 100%;
